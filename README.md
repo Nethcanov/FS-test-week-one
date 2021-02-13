@@ -25,20 +25,20 @@ Give yourself a grade for each question. Explain why you gave yourself that grad
 
 ### 1. Palindrome
 
-- Grade: 3.5?
+- Grade: 3.5
 - Explanation: took ages to remember toString was needed, not struggle free
 
 ### 2. Add grid items
 
-- Grade: 
-- Explanation: 
+- Grade: 4
+- Explanation: triple nested array - looks horrid, needs a triple loop
 
 ### 3. Create file name string in CamelCase
 
-- Grade: 3.5
-- Explanation: not a breeze, took a while
+- Grade: 4
+- Explanation:  endsWith was a great help, would have struggled without this
 
 ### 4. Create pattern
 
-- Grade:
-- Explanation:
+- Grade: 1/0
+- Explanation: Need to come back to this later - did not manage to get enough uninterrupted time

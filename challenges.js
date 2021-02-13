@@ -11,7 +11,7 @@ Note:
 - Single numbers should return true.
 Comments -
 // first if num is less than 0, it's negative, return false (removes second test case) 
-// need to use toString() or won't be able to do reverse the number and/or compare
+// need to use toString()  - makes it like an object? or won't be able to do reverse the number and/or compare
 // if reversed string is same as forward string, return true - no need to test for single number 
 ------------------*/
 
@@ -35,25 +35,23 @@ Comments -
 Create a function that takes a grid
 as an argument and adds all the numbers
 in that grid together.
-//use reduce once looped through the array?
-Examples:
-const y = [[[1], [2]]];
-console.log(addGridItems(y)); // 3
+// create a variable to add sum to
+// loop through the array 3 times and add the elements from each array together
+// return the sum outside of the for loops
 
-const x = [[[1, 0, -3], [2, 4], [3]], [[4, 4, 3], [5, -3, -1], [6, 10]], [[7, -5, -5], [8, 0], [9, 1]]];
-console.log(addGridItems(x)); // 50
+
 ------------------*/
-// let ans = 0;
+// let sum = 0;
 // function addGridItems(grid) {
     
 //     for(let i = 0; i < grid.length; i++){
 //         for(let j = 0; j < grid[i].length; j++){
 //             for(let k = 0; k < grid[i][j].length; k++){
-              
+//               sum += grid[i][j][k];
 //             }
 //         }
 //     }
-//     return ans;
+//     return sum;
 // }
 
 // const y = [[[1], [2]]];
@@ -111,4 +109,8 @@ the extensions below:
 
 Hints:
 - Use a loop within a loop.
+// create an array of numbers
 ------------------*/
+let numbers = [99, 96, 93, 90, 80];
+
+
