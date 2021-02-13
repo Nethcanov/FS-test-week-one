@@ -25,18 +25,18 @@ Give yourself a grade for each question. Explain why you gave yourself that grad
 
 ### 1. Palindrome
 
-- Grade:
-- Explanation:
+- Grade: 3.5?
+- Explanation: took ages to remember toString was needed, not struggle free
 
 ### 2. Add grid items
 
-- Grade:
-- Explanation:
+- Grade: 
+- Explanation: 
 
 ### 3. Create file name string in CamelCase
 
-- Grade:
-- Explanation:
+- Grade: 3.5
+- Explanation: not a breeze, took a while
 
 ### 4. Create pattern
 
