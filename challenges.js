@@ -60,6 +60,27 @@ in that grid together.
 // const x = [[[1, 0, -3], [2, 4], [3]], [[4, 4, 3], [5, -3, -1], [6, 10]], [[7, -5, -5], [8, 0], [9, 1]]];
 // console.log(addGridItems(x)); // 50
 
+
+////or - 
+/*
+but why does it add the result of the first console.log() to the second?  
+If I comment them out and run separatly, I get the correct answers but if they both run, I get 53.
+*/
+
+// let sum = 0;
+// let first = [];
+// let second = [];
+// let thrid = [];
+// function addGridItems(grid) {
+//     first = grid.flat();
+//     second = first.flat();
+//     for (let x = 0; x < second.length; x++){
+//         sum += second[x];
+//     }
+//     return sum;
+
+// }
+
 /*------------------
 3)
 DONE
@@ -100,6 +121,7 @@ the extensions below:
 // console.log(createFileName("Data from Pokemon API", "JSON")); // "data_from_pokemon_api.json"
 
 /*------------------
+2:45pm - 3:15pm
 4) Print the following pattern
 99 96 93 90 88
 99 96 93 90
@@ -110,7 +132,29 @@ the extensions below:
 Hints:
 - Use a loop within a loop.
 // create an array of numbers
+// loop backwards through the array
+// pop an element off the array with every loop
+//console.log within the loop to show result of every loop
 ------------------*/
-let numbers = [99, 96, 93, 90, 80];
+// let numbers = [99, 96, 93, 90, 88];
+// let i = numbers.length-1;
+// while(i >= 0){
+//   i--;
+//   console.log(numbers);
+//   numbers.pop();
+// }
+
+
+/*
+want to do this with a string not an array to make it loop like the example, doesn't work
+*/
+// let numbers = "99, 96, 93, 90, 88";
+
+// let i = numbers.length-1;
+// while(i >= 0){
+//   numbers.slice(0, -1);
+//   i--;
+// }
+////took console.log out
 
 

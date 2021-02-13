@@ -26,19 +26,19 @@ Give yourself a grade for each question. Explain why you gave yourself that grad
 ### 1. Palindrome
 
 - Grade: 3.5
-- Explanation: took ages to remember toString was needed, not struggle free
+- Explanation: took ages to remember toString was needed, not struggle free - used mdn string prototypes for this one
 
 ### 2. Add grid items
 
 - Grade: 4
-- Explanation: triple nested array - looks horrid, needs a triple loop
+- Explanation: triple nested array - looks horrid, needs a triple loop - have a question for the second
 
 ### 3. Create file name string in CamelCase
 
 - Grade: 4
-- Explanation:  endsWith was a great help, would have struggled without this
+- Explanation:  endsWith was a great help, would have struggled without this - used mdn string prototypes for this one
 
 ### 4. Create pattern
 
-- Grade: 1/0
-- Explanation: Need to come back to this later - did not manage to get enough uninterrupted time
+- Grade: 4/2
+- Explanation: depending on what is really required, depends on whether it works or not
