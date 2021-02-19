@@ -1,6 +1,6 @@
 /*------------------
 1)
-DONE
+DONE - fixed!
 Write a function that determines
 if a number is a palindrome. A number is a
 palindrome if it reads the same forwards and
@@ -17,18 +17,25 @@ Comments -
 
 // function isPalindrome(num) {
 //     let reversedNum = num.toString().split("").reverse().join("");
-//     if(num < 0){
-//        return false
-//    }
+//// return reversedNum === num.toString();//shorter
 //    if(reversedNum === num.toString()){
-//        return true
-//    }
+//        return true;
+//    } else {
+//         return false;
+//    }    
 // }
+////Jim's shorter way
+// function isPalindrome(num) {
+//     let numStr = `${num}` //also turns it into a string
+//     return numStr === numStr.split("").reverse().join("");
+// }
+
 // console.log(isPalindrome(12321)); // true
 // console.log(isPalindrome(-12321)); // false
 // console.log(isPalindrome(1)); // true
 // console.log(isPalindrome(84146)); // false
 // console.log(isPalindrome(12)); // false
+
 
 /*------------------
 2)
@@ -41,9 +48,9 @@ in that grid together.
 
 
 ------------------*/
-// let sum = 0;
+
 // function addGridItems(grid) {
-    
+//   let sum = 0;  
 //     for(let i = 0; i < grid.length; i++){
 //         for(let j = 0; j < grid[i].length; j++){
 //             for(let k = 0; k < grid[i][j].length; k++){
@@ -63,23 +70,27 @@ in that grid together.
 
 ////or - 
 /*
-but why does it add the result of the first console.log() to the second?  
-If I comment them out and run separatly, I get the correct answers but if they both run, I get 53.
+but why does it add the result of the first console.log() to the second - because of where I declared the variable sum 
+I get 53 if I declare the sum variable outside the function.
 */
 
-// let sum = 0;
-// let first = [];
-// let second = [];
-// let thrid = [];
 // function addGridItems(grid) {
+//     let first = [];
+//     let second = [];
+//     let third = [];
+//     let sum = 0;
 //     first = grid.flat();
 //     second = first.flat();
 //     for (let x = 0; x < second.length; x++){
 //         sum += second[x];
 //     }
 //     return sum;
-
 // }
+// const y = [[[1], [2]]];
+// console.log(addGridItems(y)); // 3
+
+// const x = [[[1, 0, -3], [2, 4], [3]], [[4, 4, 3], [5, -3, -1], [6, 10]], [[7, -5, -5], [8, 0], [9, 1]]];
+// console.log(addGridItems(x)); // 50
 
 /*------------------
 3)
@@ -100,20 +111,54 @@ the extensions below:
 // convert all to lowercase and replace all spaces with _ and add to new variable
 // if end of string contains "photo" or "api", return string + .png, .api or .pdf 
 ------------------*/
-// let fileName = "";
-// let ans = ""
+////mine
 // function createFileName(string, type) {
+//     let fileName = "";
+//     let ans = ""
 //     fileName = string.toLowerCase().replaceAll(" ", "_");
 //     if(fileName.endsWith("photo")){
 //         ans = `${fileName}.png`
 //     }
-//     if(fileName.endsWith("api")){
-//         ans = `${fileName}.api`
+//     else if(fileName.endsWith("api")){
+//         ans = `${fileName}.json`
 //     }
 //     else {
 //         ans = `${fileName}.pdf`
 //     }
 //     return ans
+// }
+////Jim's
+// function createFileName(string, type) {
+//     let fileName = string.toLowerCase().replaceAll(" ", "_");
+//     if (type === "PDF") {
+//         fileName += ".pdf";
+//     } else if (type === "image") {
+//         fileName += ".png";
+//     } else {
+//         fileName += ".json";
+//     }
+//     return fileName;
+// }
+
+////or
+
+// function createFileName(string, type) {
+//     let fileName = string.toLowerCase().replaceAll(" ", "_");
+//     switch(type){
+//         case "PDF":
+//             fileName += ".pdf";
+//             break;
+//         case "image":
+//             fileName += ".png";
+//             break;
+//         case "JSON":
+//             fileName += ".json";
+//             break;
+//         default:
+//             return "Enter a valid filename"
+//             break;
+//     }
+//     return fileName;
 // }
 
 // console.log(createFileName("Sofia Engineering Resume", "PDF")); // "sofia_engineering_resume.pdf"
@@ -148,6 +193,7 @@ Hints:
 /*
 want to do this with a string not an array to make it loop like the example, doesn't work
 */
+////doesn't work
 // let numbers = "99, 96, 93, 90, 88";
 
 // let i = numbers.length-1;
@@ -156,5 +202,17 @@ want to do this with a string not an array to make it loop like the example, doe
 //   i--;
 // }
 ////took console.log out
+
+////Jim's code
+// let nums = [99, 96, 93, 90, 88];
+// for (let i = nums.length; i > 0; i--){
+//     console.log(nums.slice(0, i).join(" "));
+// }
+////OR
+// let numbers = [99, 96, 93, 90, 88];
+// while(numbers.length){
+//   console.log(numbers.join(" "));
+//   numbers.pop();
+// }
 
 
